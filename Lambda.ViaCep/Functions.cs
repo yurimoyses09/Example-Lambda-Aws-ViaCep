@@ -31,7 +31,7 @@ public class Functions
 
                 var add = _repository.AddItem(JsonConvert.SerializeObject(resp), cep);
 
-                return add;
+                return  new { data = add };
             }
         }
         catch (Exception)
