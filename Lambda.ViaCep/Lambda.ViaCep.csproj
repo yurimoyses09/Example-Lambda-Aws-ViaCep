@@ -17,6 +17,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Lambda.ViaCep.Domain\Lambda.ViaCep.Domain.csproj" />
+    <ProjectReference Include="..\Lambda.ViaCep.Repository\Lambda.ViaCep.Repository.csproj" />
     <ProjectReference Include="..\Lambda.ViaCep.Services\Lambda.ViaCep.Services.csproj" />
   </ItemGroup>
 </Project>
