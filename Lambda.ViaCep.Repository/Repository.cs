@@ -5,8 +5,6 @@ using Lambda.ViaCep.Domain.Helper;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
-using System.Runtime.CompilerServices;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Lambda.ViaCep.Repository
@@ -44,7 +42,7 @@ namespace Lambda.ViaCep.Repository
                     Item = new Dictionary<string, AttributeValue>()
                     {
                         { "ID_REGISTRO", new AttributeValue { N = LambdaViaCepHelper.ObterIdRegistro().ToString() } },
-                        { "DS_ENDPOINT", new AttributeValue { S = string.Empty } }, 
+                        { "DS_ENDPOINT", new AttributeValue { S = "Lambda.ViaCep::Lambda.ViaCep.Functions::ObterLocalidade" } }, 
                         { "JSON_RETORNO", new AttributeValue { S = txt} },
                         { "REGISTRO_CEP", new AttributeValue { S =  input} }
                     }
